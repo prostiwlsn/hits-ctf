@@ -10,6 +10,6 @@
 
 <style>
 :root{
-  @apply bg-ctfpalette-100 text-ctfpalette-300;
+  @apply bg-ctfpalette-50 text-ctfpalette-300;
 }
 </style>
