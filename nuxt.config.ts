@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/tailwindcss", "nuxt-file-storage"],
+  plugins: [],
   app: {
     head: {
       link: [{ rel: 'icon', type: 'image/x-icon', href: "/flag.ico" }]
