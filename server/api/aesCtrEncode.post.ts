@@ -14,8 +14,8 @@ export default defineEventHandler(async (event) => {
 
     const messageBytes = textEncoder.encode(message.message)
 
-    var aesCbc = new aesjs.ModeOfOperation.cbc(keyBytes, keyBytes);
-    var encryptedBytes = aesCbc.encrypt(messageBytes);
+    var aesCtr = new aesjs.ModeOfOperation.ctr(keyBytes, keyBytes);
+    var encryptedBytes = aesCtr.encrypt(messageBytes);
 
     var textDecoder = new TextDecoder()
 
