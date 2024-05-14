@@ -14,10 +14,10 @@ export default defineNuxtConfig({
         extend:{
           colors:{
             ctfpalette:{
-              50: '#FFF5E0',
-              100: '#8DECB4',
-              200: '#41B06E',
-              300: '#141E46'
+              50: '#DFF5FF',
+              100: '#67C6E3',
+              200: '#378CE7',
+              300: '#5356FF'
             }
           }
         }
