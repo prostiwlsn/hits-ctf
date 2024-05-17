@@ -7,5 +7,7 @@ ADD . ${APP_ROOT}
 
 RUN npm ci
 
+EXPOSE 3000
+
 RUN npm run build
 CMD node .output/server/index.mjs
