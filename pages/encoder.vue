@@ -4,7 +4,7 @@ let message = ""
 const isCopied = ref(false)
 
 async function encodeAndCopy(){
-    const body = {message: message}
+    const body = {message: message, key: "rayofsunshinexdd", counter: "rayofsunshinexdd"}
 
     const data = await $fetch('/api/aesCtrEncode',{
         method: "POST",
