@@ -1,8 +1,0 @@
-version: "3.3"
-
-services:
-  nuxt:
-    build: ./nuxt
-    expose:
-      - '3000'
-    restart: always
