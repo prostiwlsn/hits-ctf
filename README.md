@@ -1,6 +1,7 @@
 # CTF LAB 0
 
 CTF task for HITS
+
 docs - https://docs.google.com/document/d/1gKKUyyQ8kYyyYP1p0AQ3RAqNioXuyZSGHhCUiT1t0nA
 
 ## Nuxt 3 Minimal Starter
