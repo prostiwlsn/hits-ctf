@@ -9,7 +9,6 @@ export default defineEventHandler(async (event) => {
 
     const textEncoder = new TextEncoder();
 
-    //const keyString = "rayofsunshinexdd"
     const keyString = message.key
     const keyBytes = textEncoder.encode(keyString);
 
@@ -18,9 +17,8 @@ export default defineEventHandler(async (event) => {
     var aesCtr = new aesjs.ModeOfOperation.ctr(keyBytes, new aesjs.Counter(keyBytes));
     var encryptedBytes = aesCtr.encrypt(messageBytes);
 
-    var textDecoder = new TextDecoder()
-
-    var result = aesjs.utils.utf8.fromBytes(encryptedBytes)
+    //var textDecoder = new TextDecoder()
+    //var result = aesjs.utils.utf8.fromBytes(encryptedBytes)
 
     return arrayBufferToBase64(encryptedBytes);
 })

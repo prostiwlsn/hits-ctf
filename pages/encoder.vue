@@ -16,7 +16,10 @@ async function encodeAndCopy(){
 }
 
 onMounted(async () => {
-    
+    const isAuthorized = localStorage.getItem("isAuthorized")
+    if(isAuthorized != "1"){
+        await navigateTo('/')
+    }
 })
 </script>
 

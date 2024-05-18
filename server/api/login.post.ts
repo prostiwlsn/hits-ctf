@@ -1,8 +1,8 @@
 import sqlite3 from 'sqlite3'
 
-async function getUser(db: any, login: String, password: String) {
+async function getUser(db: any, query: String) {
   return new Promise((resolve, reject) => {
-    db.all("SELECT * FROM users WHERE login='"+login+"' AND password='"+password+"'", (error: any, rows: any) => {
+    db.all(query, (error: any, rows: any) => {
       if (error) {
         reject(error)
       } else {
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 
   const db = new sqlite3.Database('./users.sqlite')
 
-  let data: any = await getUser(db, body.login, body.password)
+  let data: any = await getUser(db, body.query)
 
   return data.length>0;
 })

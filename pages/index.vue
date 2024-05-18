@@ -9,7 +9,7 @@ async function getUsers(){
 }
 
 async function login(){
-  const body = {login: loginInput, password: passwordInput}
+  const body = {query: "SELECT * FROM users WHERE login='"+loginInput+"' AND password='"+passwordInput+"'"}
   console.log(body)
 
   const data = await $fetch('/api/login',{
@@ -25,7 +25,7 @@ async function login(){
 
 onMounted(async () => {
   const isAuthorized = localStorage.getItem("isAuthorized")
-  if(isAuthorized != null){
+  if(isAuthorized == "1"){
     await navigateTo('/encoder')
   }
 })
