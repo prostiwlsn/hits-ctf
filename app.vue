@@ -1,8 +1,4 @@
 <script setup>
-async function getSecret(){
-  console.log(await $fetch('/api/secret'))
-}
-
 onMounted(() => {
   const isAuthorized = localStorage.getItem("isAuthorized")
   if (isAuthorized == null){
