@@ -2,7 +2,7 @@
 
 CTF task for HITS
 
-docs - https://docs.google.com/document/d/1gKKUyyQ8kYyyYP1p0AQ3RAqNioXuyZSGHhCUiT1t0nA
+[docs](https://docs.google.com/document/d/1abLd5AGN6zumCxCTrHkWOWI6_BdaEHsQT_Y4THiQLrw/edit?usp=sharing)
 
 ## Nuxt 3 Minimal Starter
 
